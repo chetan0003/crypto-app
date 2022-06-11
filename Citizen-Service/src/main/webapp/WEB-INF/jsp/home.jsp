@@ -45,6 +45,13 @@
    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
    <td><a  href="http://localhost:7000/crypto/author"><input type ="button" value="About Author" class="auth_subm" style="background-color:#00d100"/></a></td>
    </tr>
+    <!-- error message  -->
+	<c:if test="${not empty msg}">
+		<div align="center">
+			<h3 style="color: #ff2424;">${msg}</h3>
+		</div>
+	</c:if>
+	
 	<c:choose>
 		<c:when test="${empty author && empty data}">
 
@@ -68,11 +75,11 @@
 	<c:if test="${not empty author}">
 	<table cellSpacing='0'  align="center" style="background-color:#FFFFE0; margin-top: 60px;" class="auth_table" border="1">
 	        <tr><td cellspacing="20px"><img src="/IMG_20181130_191634.jpg" alt="Girl in a jacket" width="200" height="200"></td></tr>
-			<tr><td><h4>Name :${author.name}</h4></td></tr>
+			<tr><td><h4>Name: ${author.name}</h4></td></tr>
 			<tr><td><h4>Designation: ${author.designation}</h4></td></tr>
 			<tr><td><h4>Experience: ${author.experience} year(S)</h4></td></tr>
 	</table>
-		
+
 </c:if>
 	
 	<c:if test="${not empty data}">

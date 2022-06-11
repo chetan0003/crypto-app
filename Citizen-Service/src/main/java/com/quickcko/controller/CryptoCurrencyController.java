@@ -30,6 +30,10 @@ public class CryptoCurrencyController {
 	@GetMapping(path = "/tickers")	
 	public String getAllCoinTicker(Model model) {
 		Response cryptoCurrency = cryptoCurrencyService.getAllCoinTicker();
+		if(cryptoCurrency.getStatusCode()==500 ) {
+			model.addAttribute("msg",cryptoCurrency.getMsg());
+			return "home";
+		}
 		model.addAttribute("data",cryptoCurrency.getData());
 		return  "home";
 	}

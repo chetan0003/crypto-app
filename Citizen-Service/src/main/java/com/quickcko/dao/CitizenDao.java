@@ -1,11 +1,11 @@
 package com.quickcko.dao;
 
 import java.util.List;
-import java.util.stream.Stream;
+
 
 import javax.sql.DataSource;
 
-import org.assertj.core.util.Arrays;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 
-import com.quickcko.custom.exception.EmptyInputException;
+
 import com.quickcko.model.Citizen;
 import com.quickcko.model.CitizenVaccinationCenter;
 import com.quickcko.model.VaccinationCenter;

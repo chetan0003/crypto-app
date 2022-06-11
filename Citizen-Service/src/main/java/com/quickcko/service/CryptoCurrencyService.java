@@ -38,7 +38,7 @@ public class CryptoCurrencyService {
         try {
         res=restTemplate.exchange(coinBaseUrl+"/api/tickers/?start=0&limit=100", HttpMethod.GET, entity, Response.class);
         }catch (ResourceAccessException e) {
-        	return new Response("Crypto Service Is Down", 500);
+        	return new Response("Crypto Service Is Down Check your Internet Connection", 500);
 		}
         Response cryptoCurrency=new Response();
 		if (res != null && res.getStatusCodeValue() == 200) {
@@ -57,7 +57,7 @@ public class CryptoCurrencyService {
         try{
              res=restTemplate.exchange(coinBaseUrl+"/api/ticker/?id="+id, HttpMethod.GET, entity, Currency[].class);
         }catch (ResourceAccessException e) {
-			return new Response("Crypto Service Is Down", 500);
+			return new Response("Crypto Service Is Down Check your Internet Connection ,", 500);
 		}
         if (res != null && res.getStatusCodeValue() == 200) {
         	return new Response(java.util.Arrays.asList(res.getBody()), 200);
