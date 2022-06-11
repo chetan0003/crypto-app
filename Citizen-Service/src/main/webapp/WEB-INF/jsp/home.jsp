@@ -40,9 +40,8 @@
    <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/tickers"><input type ="button" value="Get All Tickers" class="auth_subm" style="background-color:#00d100"/></a></td>
    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp
    &nbsp 
-  <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/"><input type ="button" value="Home" class="auth_subm" style="background-color:#00d100"/></a></td>
-   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/"><input type ="button" value="Home" class="auth_subm" style="background-color:#00d100"/></a></td>
+   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
    <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/author"><input type ="button" value="About Author" class="auth_subm" style="background-color:#00d100"/></a></td>
    </tr>
     <!-- error message  -->
