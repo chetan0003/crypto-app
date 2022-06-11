@@ -16,7 +16,6 @@ import com.quickcko.model.Response;
 import com.quickcko.service.CryptoCurrencyService;
 
 @Controller
-@RequestMapping("/crypto")
 public class CryptoCurrencyController {
     
 	@Autowired
@@ -27,7 +26,7 @@ public class CryptoCurrencyController {
 		return new ModelAndView("home");
 	}
 	
-	@GetMapping(path = "/tickers")	
+	@GetMapping(path = "crypto/tickers")	
 	public String getAllCoinTicker(Model model) {
 		Response cryptoCurrency = cryptoCurrencyService.getAllCoinTicker();
 		if(cryptoCurrency.getStatusCode()==500 ) {
@@ -38,14 +37,14 @@ public class CryptoCurrencyController {
 		return  "home";
 	}
 	
-	@GetMapping(path = "/ticker/id/{id}")	
+	@GetMapping(path = "crypto/ticker/id/{id}")	
 	public String getCoinTickerById(@PathVariable Integer id,Model model) {
 		Response cryptoCurrency = cryptoCurrencyService.getCoinTickerById(id);
 		model.addAttribute("data",cryptoCurrency.getData());
 		return  "home";
 	}
 	
-	@GetMapping(path = "/author")	
+	@GetMapping(path = "crypto/author")	
 	public String getAuthor(Model model) {
 		Author author =new Author("Chetan Dahule", "Java Developer", "3.6", "");
 		model.addAttribute("author",author);

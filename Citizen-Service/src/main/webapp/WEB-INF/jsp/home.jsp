@@ -37,13 +37,13 @@
    <h4 align="center">Here, you will get the details of crypto currency at real time</h4>
    
    <tr>
-   <td><a  href="http://localhost:7000/crypto/tickers"><input type ="button" value="Get All Tickers" class="auth_subm" style="background-color:#00d100"/></a></td>
+   <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/tickers"><input type ="button" value="Get All Tickers" class="auth_subm" style="background-color:#00d100"/></a></td>
    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp
-   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-  <td><a  href="http://localhost:7000/crypto/"><input type ="button" value="Home" class="auth_subm" style="background-color:#00d100"/></a></td>
+   &nbsp 
+  <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/"><input type ="button" value="Home" class="auth_subm" style="background-color:#00d100"/></a></td>
    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-   <td><a  href="http://localhost:7000/crypto/author"><input type ="button" value="About Author" class="auth_subm" style="background-color:#00d100"/></a></td>
+   <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/author"><input type ="button" value="About Author" class="auth_subm" style="background-color:#00d100"/></a></td>
    </tr>
     <!-- error message  -->
 	<c:if test="${not empty msg}">
@@ -121,7 +121,7 @@
 			<%-- <td>${city.csupply}</td>
 			<td>${city.tsupply}</td>
 			<td>${city.msupply}</td> --%>
-			<td><a  href="http://localhost:7000/crypto/ticker/id/${city.id}"><input type ="button" value="Get Details" style="background-color:#d6d6d6"/></a></td>
+			<td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/ticker/id/${city.id}"><input type ="button" value="Get Details" style="background-color:#d6d6d6"/></a></td>
 	   </tr>
 	</c:forEach>
 	</table>
