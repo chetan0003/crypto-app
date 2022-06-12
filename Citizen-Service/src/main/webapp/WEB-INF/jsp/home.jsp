@@ -41,7 +41,7 @@
    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp
    &nbsp 
   <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/"><input type ="button" value="Home" class="auth_subm" style="background-color:#00d100"/></a></td>
-   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
    <td><a  href="https://springboot-heroku-cryptoapp.herokuapp.com/crypto/author"><input type ="button" value="About Author" class="auth_subm" style="background-color:#00d100"/></a></td>
    </tr>
     <!-- error message  -->
@@ -92,7 +92,7 @@
 	<th>Price_usd</th>
 	<th>Percent_change_24h</th>
 	<th>Percent_change_1h</th>
-	<th>Percent_change_7d</th>
+	<!-- <th>Percent_change_7d</th> -->
 	<th>Price_btc</th>
 	<th>Market_cap_usd</th>
 	<!-- <th>Volume24</th>
@@ -112,7 +112,7 @@
 			<td>${city.price_usd}</td>
 			<td>${city.percent_change_24h}</td>
 			<td>${city.percent_change_1h}</td>
-			<td>${city.percent_change_7d}</td>
+			<%-- <td>${city.percent_change_7d}</td> --%>
 			<td>${city.price_btc}</td>
 			<td>${city.market_cap_usd}</td>
 <%-- 			<td>${city.volume24}</td> --%>
